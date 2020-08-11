@@ -1,0 +1,135 @@
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-mark-content {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: var(--dark-blue-color);
+  overflow-y: hidden;
+}
+
+.contact-mark-bg {
+  max-height: 100%;
+  z-index: 2;
+  opacity: 0.2;
+  position: absolute;
+  text-align: center;
+}
+
+.contact-mark-bg img {
+  width: 100%;
+}
+
+.contact-mark {
+  position: absolute;
+  z-index: 4;
+  color: var(--light-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-mark span {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+.contact-mark-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-mark-buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--gray-color);
+  background: #16c60c;
+  border: 0px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-links-container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links-content {
+  max-width: 1280px;
+  height: 100%;
+  max-height: 40vh;
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-links-title h2 {
+  font-size: 2rem;
+  width: fit-content;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-links-title h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  margin-bottom: -5px;
+  width: 40%;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--gray-color);
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 3rem 0;
+}
+
+.contact-icon {
+  transition: all 200ms ease;
+  fill: var(--gray-color);
+  margin: 0 20px;
+}
+
+.contact-icon:hover {
+  fill: var(--dark-blue-color);
+}
+
+@media screen and (max-width: 800px) {
+  .contact-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  .contact-mark-bg img {
+    height: 100%;
+    width: inherit;
+  }
+
+  .contact-mark {
+    padding: 5px;
+    font-size: 1.8rem;
+  }
+}

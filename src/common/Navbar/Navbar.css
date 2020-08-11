@@ -1,0 +1,187 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  font-family: "Raleway";
+  background: var(--background-color); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    var(--light-color),
+    var(--background-color)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    var(--light-color),
+    var(--background-color)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 99;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navbar-name:hover {
+}
+
+.navbar-brand svg {
+  height: 45px;
+  fill: var(--dark-blue-color);
+}
+
+.navbar-brand:hover {
+  transform: rotate(-2deg);
+}
+
+.navbar-name {
+  font-weight: 400;
+  margin-left: 10px;
+  color: var(--light-gray-color);
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.navbar-mode {
+  height: inherit;
+  margin-right: 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-icon {
+  transition: all 200ms ease;
+  fill: var(--light-gray-color);
+}
+
+.navbar-icon:hover {
+  fill: var(--dark-blue-color);
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-menu-button {
+  cursor: pointer;
+  padding: 2px;
+}
+
+.navbar-menu-opened {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  right: 0%;
+  width: 50%;
+  height: 50vh;
+  background: var(--background-color); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    var(--middle-gradient-color),
+    var(--background-color)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    var(--middle-gradient-color),
+    var(--background-color)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all 200ms linear;
+  border-bottom-left-radius: 10px;
+}
+
+.navbar-menu-links {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-menu-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--gray-color);
+  transition: color 300ms;
+}
+
+.navbar-menu-link a.active {
+  color: var(--dark-blue-color);
+}
+
+.navbar-menu-link a:hover {
+  color: var(--dark-blue-color);
+}
+
+.navbar-menu-redes a {
+  padding: 10px;
+}
+
+.move-right {
+  right: -50%;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar-menu-opened {
+    display: flex;
+    position: initial;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transition: all 300ms linear;
+  }
+
+  .navbar-menu-links {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar-menu-link a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-color);
+    transition: color 300ms;
+    padding: 10px;
+  }
+
+  .navbar-menu-link:nth-last-of-type(2) {
+    margin-right: 20px;
+  }
+
+  .navbar-menu-button {
+    display: none;
+  }
+
+  .navbar-menu-redes a {
+    padding: 10px;
+  }
+
+  .navbar-menu-redes a svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .move-right {
+    right: 0;
+  }
+}

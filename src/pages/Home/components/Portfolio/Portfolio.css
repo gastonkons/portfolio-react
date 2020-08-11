@@ -1,0 +1,145 @@
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  z-index: 2;
+}
+
+.portfolio-container h2 {
+  margin: 5rem auto 2rem auto;
+  font-size: 2rem;
+  width: fit-content;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.portfolio-container h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  margin-bottom: -5px;
+  width: 40%;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--gray-color);
+}
+
+.portfolio-projects {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.portfolio-project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: var(--light-color);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  transition: all 300ms linear;
+}
+
+.portfolio-project-img {
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio-project-img img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.portfolio-project-title {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio-project-title::after {
+  content: "";
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--dark-blue-color);
+}
+
+.portfolio-project-techs {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.portfolio-project-description {
+  font-family: "Open Sans";
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.portfolio-project-buttons {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-evenly;
+}
+
+.portfolio-project-buttons button {
+  background-color: var(--dark-blue-color);
+  color: var(--light-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Open Sans";
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.portfolio-project-buttons button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 30px;
+  }
+
+  .portfolio-project {
+    width: 100%;
+  }
+
+  .portfolio-project-title {
+    flex-direction: column;
+  }
+
+  .portfolio-project-title::after {
+    bottom: -8px;
+  }
+}

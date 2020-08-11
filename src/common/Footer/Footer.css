@@ -1,0 +1,19 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--gray-color);
+  box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans";
+}
+
+.footer-content {
+  max-width: 1280px;
+  color: var(--light-color);
+  padding: 3rem;
+}
+
+.footer-content b {
+  color: var(--blue-color);
+}
