@@ -9,7 +9,7 @@ import Footer from "../../common/Footer/Footer";
 
 const Home = () => {
   return (
-    <div className="container-fluid" name="home" id="home">
+    <div className="container-fluid" id="home">
       <Navbar />
       <Header />
       <About />
