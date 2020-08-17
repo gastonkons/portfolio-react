@@ -1,0 +1,17 @@
+.openToWork {
+  background: var(--dark-blue-color);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.openToWork a {
+  color: #fff;
+}
+
+.openToWork span {
+  font-size: var(--text-size);
+}

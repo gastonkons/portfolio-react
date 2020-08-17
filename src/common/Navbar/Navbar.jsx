@@ -1,131 +1,101 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
-import { ReactComponent as Logo } from "../../assets/images/Logo-blue.svg";
-import iconSet from "../../JSON/selection.json";
-import IcomoonReact from "icomoon-react";
-// import { HashLink as Link } from "react-router-hash-link";
-import { Link } from "react-scroll";
+import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 const Navbar = () => {
-  const [menuState, setMenuState] = useState(false);
-  const [menuIcon, setMenuIcon] = useState("menu-open");
-  const openMenu = () => {
-    const menu = document.querySelector(".navbar-menu-opened");
-
-    if (!menuState) {
-      setMenuIcon("menu-close");
-      setMenuState(true);
-    } else {
-      setMenuIcon("menu-open");
-      setMenuState(false);
+  const menuHandle = () => {
+    let btn = document.querySelector(".nav-btn");
+    let nav = document.querySelector(".navbar");
+    let width = document.body.clientWidth;
+    if (width < 800) {
+      btn.classList.toggle("open");
+      nav.classList.toggle("open");
     }
-    menu.classList.toggle("move-right");
-  };
-
-  const handleMode = (e) => {
-    console.log("handleMode");
   };
 
   return (
     <div className="navbar">
-      <div className="navbar-brand">
-        <Link smooth to="/">
-          <Logo />
-          <span className="navbar-name">gastonkons</span>
-        </Link>
-      </div>
-      <nav className="navbar-menu">
-        <div className="navbar-mode" onClick={handleMode}>
-          <IcomoonReact
-            className="navbar-icon"
-            iconSet={iconSet}
-            icon="sun"
-            size={18}
-          />
-        </div>
-        <div className="navbar-menu-button" onClick={openMenu}>
-          <IcomoonReact
-            className="navbar-icon"
-            iconSet={iconSet}
-            icon={menuIcon}
-            size={40}
-          />
-        </div>
-        <div className="navbar-menu-opened move-right">
-          <div className="navbar-menu-links">
-            <div className="navbar-menu-link">
-              <Link
-                smooth={true}
-                spy={true}
-                activeClass="active"
-                offset={-160}
-                to="header"
-              >
-                Home
-              </Link>
-            </div>
-            <div className="navbar-menu-link">
-              <Link
-                smooth={true}
-                spy={true}
-                offset={-80}
-                activeClass="active"
-                to="about"
-              >
-                About
-              </Link>
-            </div>
-            <div className="navbar-menu-link">
-              <Link
-                smooth={true}
-                spy={true}
-                offset={-80}
-                activeClass="active"
-                to="portfolio"
-              >
-                Portfolio
-              </Link>
-            </div>
-            <div className="navbar-menu-link">
-              <Link
-                smooth={true}
-                spy={true}
-                offset={-80}
-                activeClass="active"
-                to="contact"
-              >
-                Contact
-              </Link>
-            </div>
-            <div className="navbar-menu-redes">
-              <a
-                href="https://www.linkedin.com/in/gastonkons/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <IcomoonReact
-                  className="navbar-icon"
-                  iconSet={iconSet}
-                  icon="linkedin"
-                  size={25}
-                />
-              </a>
-              <a
-                href="https://github.com/gastonkons"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <IcomoonReact
-                  className="navbar-icon"
-                  iconSet={iconSet}
-                  icon="github"
-                  size={25}
-                />
-              </a>
-            </div>
+      <div className="navbar-container">
+        <Link to="/">
+          <div className="navbar-logo">
+            <Logo title="Gastón Konstantinides - Full Stack Developer" />
+            <span className="navbar-logodescription">
+              Gastón Konstantinides - Desarrollador Full Stack
+            </span>
           </div>
-        </div>
-      </nav>
+        </Link>
+        <nav className="navbar-nav">
+          <div className="nav-btn" onClick={menuHandle}>
+            <div className="nav-btn__burger"></div>
+          </div>
+          <div className="nav-links">
+            <ul>
+              <LinkScroll
+                smooth={true}
+                spy={true}
+                activeClass="active"
+                offset={-100}
+                to="header"
+                onClick={menuHandle}
+              >
+                <li>Home</li>
+              </LinkScroll>
+              <LinkScroll
+                smooth={true}
+                spy={true}
+                activeClass="active"
+                offset={-100}
+                to="portfolio"
+                onClick={menuHandle}
+              >
+                <li>Portfolio</li>
+              </LinkScroll>
+              <LinkScroll
+                smooth={true}
+                spy={true}
+                activeClass="active"
+                offset={-40}
+                to="skills"
+                onClick={menuHandle}
+              >
+                <li>Skills</li>
+              </LinkScroll>
+              <LinkScroll
+                smooth={true}
+                spy={true}
+                activeClass="active"
+                offset={-100}
+                to="about"
+                onClick={menuHandle}
+              >
+                <li>Acerca de</li>
+              </LinkScroll>
+              <LinkScroll
+                smooth={true}
+                spy={true}
+                activeClass="active"
+                offset={-100}
+                to="contact"
+                onClick={menuHandle}
+              >
+                <li>Contacto</li>
+              </LinkScroll>
+              <LinkScroll
+                smooth={true}
+                spy={true}
+                activeClass="active"
+                offset={-100}
+                to="cv"
+                onClick={menuHandle}
+              >
+                <li>Ver CV</li>
+              </LinkScroll>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };

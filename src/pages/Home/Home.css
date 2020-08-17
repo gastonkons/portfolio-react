@@ -1,3 +1,141 @@
 .container-fluid {
   max-width: 100%;
 }
+
+.header {
+  background: #000;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60vh;
+  background-color: #000;
+  background-image: url("../../assets//images/notebook.jpg");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  padding: 200px 0 300px 20px;
+  color: var(--dark-text-color);
+}
+
+.hero-content h1 {
+  font-size: var(--headline-size);
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero-content h2 {
+  font-size: var(--subhead-size);
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.hero-content p {
+  font-size: var(--description-size);
+  color: var(--gray-color);
+  margin-bottom: 20px;
+}
+
+.hero-content a {
+  padding: 20px;
+  margin: 10px;
+  color: var(--dark-blue-color);
+  position: relative;
+}
+
+.hero-content a::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: -25%;
+  height: 0px;
+  width: 40%;
+  transition: all 0.5s ease;
+  background: var(--dark-blue-color);
+}
+
+.hero-content a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  height: 1px;
+  width: 40%;
+  transform: translate(-50%, 0);
+  background: var(--dark-blue-color);
+}
+
+.triangle-path {
+  height: 4vh;
+  background: #000;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+footer {
+  width: 100%;
+  background: var(--dark-background-color);
+  color: var(--dark-text-color);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  font-size: var(--description-size);
+}
+
+footer p span {
+  font-weight: 600;
+  color: var(--dark-blue-color);
+}
+
+.footer-logo svg {
+  margin: 3rem;
+  width: 34px;
+  fill: #fff;
+}
+
+@media screen and (max-width: 799px) {
+  .hero-content {
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    padding: 50px;
+    padding-bottom: 0;
+    background-size: 450px;
+    background-position-y: 40px;
+    min-height: 60vh;
+    align-items: flex-start;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+    margin: 15px 0 5px 0;
+  }
+
+  .hero-content p {
+    display: none;
+  }
+
+  .hero-content a {
+    display: block;
+    margin: 0;
+    padding: 10px 5px;
+  }
+
+  .hero-content a:nth-child(5) {
+    display: none;
+  }
+}

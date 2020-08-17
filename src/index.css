@@ -34,47 +34,103 @@
   src: url("./assets/fonts/Raleway.ttf");
 }
 
-/* Colors */
+/* Variables */
 
 :root {
-  --gray-color: #2c2c2c;
-  --light-gray-color: #474747;
-  --blue-color: #3f6cfe;
-  --dark-blue-color: #0d64e7;
-  --background-dark-color: #071231;
-  --background-color: #ece9e6;
-  --light-color: #fff;
-  --middle-gradient-color: #f5f4f3;
+  /* Colors */
+
+  /* Navcolor */
+  --nav-background: rgba(0, 0, 0, 0.8);
+  --nav-color: #f5f5f7;
+  --nav-color-hover: #fff;
+  /* Dark theme */
+  --dark-blue-color: #0071e3;
+  --dark-text-color: #f5f5f7;
+  --dark-background-color: #131313;
+  /* Light theme */
+  --light-background-color: #fbfbfd;
+  --light-text-color: #1d1d1f;
+  --light-blue-color: #06c;
+  /* Other colors */
+  --gray-color: #86868b;
+  --medium-gray-color: #515154;
+  --dark-gray-color: #1d1d1f;
+
+  /* Font sizes */
+  --hero-text-size: 4rem;
+  --headline-size: 3.5rem;
+  --headline-men-size: 2.8rem;
+  --subhead-size: 1.75rem;
+  --description-size: 1.06rem;
+  --cta-size: 1.31rem;
+  --text-size: 0.875rem;
 }
+
 /* General Settings */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: var(--light-blue-color);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+html {
+  font-size: 16px;
 }
 
 /* Body */
 
 body {
   margin: 0;
+  font-size: inherit;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--background-color); /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    var(--light-color),
-    var(--background-color)
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    var(--light-color),
-    var(--background-color)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fff;
   min-height: 100vh;
+  font-size: 16px;
+}
+
+/* Clases Generales */
+
+.pt-44 {
+  padding-top: 44px;
+}
+
+.headline {
+  font-size: var(--headline-size);
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.subheadline {
+  font-size: var(--subhead-size);
+  font-weight: 500;
+  margin: 5px 0;
 }

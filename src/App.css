@@ -2,7 +2,7 @@
 
 .App {
   color: var(--gray-color);
-  padding-top: 70px;
+  background: #fff;
   position: relative;
   overflow: hidden;
 }
