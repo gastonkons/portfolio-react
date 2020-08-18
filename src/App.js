@@ -16,7 +16,7 @@ const App = () => {
   ) : (
     <div className="App">
       <Switch>
-        <Route exact path="/portfolio-react/" component={Home} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </div>
   );
