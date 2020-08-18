@@ -138,4 +138,15 @@ footer p span {
   .hero-content a:nth-child(5) {
     display: none;
   }
+
+  .hero-content a::after,
+  .hero-content a:hover::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero {
+    margin-bottom: -0.3px;
+  }
 }

@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "Face Recognition",
+      "typo": "Desarrollo Full Stack",
+      "description": "Detección de caras a traves de link de imagenes con login y registro de puntos.",
+      "techs": ["React", "Node", "Express", "APIRest", "PostgreSQL", "Heroku"],
+      "demo": "https://smartbrain-gk.herokuapp.com/",
+      "source": "https://github.com/gastonkons/facerecognitionbrain",
+      "image": "https://i.imgur.com/sQEXGK3.jpg"
+    },
+    {
+      "name": "Apple Calculator",
+      "typo": "Desarrollo Frontend",
+      "description": "Imitación de la calculadora de Apple en el navegador con JavaScript.",
+      "techs": ["JavaScript", "HTML", "CSS", "Git"],
+      "demo": "https://gastonkons.github.io/calculator-js/",
+      "source": "https://github.com/gastonkons/calculator-js",
+      "image": "https://i.imgur.com/uMUyjNN.jpg"
+    },
+    {
+      "name": "Robofriends",
+      "typo": "Desarrollo Frontend",
+      "description": "Aplicación con buscador en React y API Rest (JSONPlaceholder y Robohash)",
+      "techs": ["React", "APIRest", "Tachyons", "Git"],
+      "demo": "https://gastonkons.github.io/robofriends/",
+      "source": "https://github.com/gastonkons/robofriends",
+      "image": "https://i.imgur.com/YCjkdMb.jpg"
+    },
+    {
+      "name": "Background Generator",
+      "typo": "Desarrollo Frontend",
+      "description": "Aplicación para buscar degradados random, realizado con JavaScript Vanilla.",
+      "techs": ["JavaScript", "CSS", "HTML", "Git"],
+      "demo": "https://gastonkons.github.io/bg-gradient/",
+      "source": "https://github.com/gastonkons/bg-gradient",
+      "image": "https://i.imgur.com/X9sDxU1.jpg"
+    }
+  ]
+}
