@@ -2,7 +2,6 @@ import React from "react";
 import "./Contact.css";
 import iconSet from "../../../../JSON/selection.json";
 import IcomoonReact from "icomoon-react";
-import { Link } from "react-scroll";
 
 const Contact = () => {
   return (
@@ -10,7 +9,13 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-title">
           <p>- Puedes comunicarte por donde prefieras -</p>
-          <h2 className="headline">Contáctame!</h2>
+          <a
+            href="mailto:gastonkons@gmail.com?Subject=Hello%20world!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className="headline">Contáctame!</h2>
+          </a>
         </div>
         <div className="contact-links">
           <a

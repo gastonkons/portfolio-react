@@ -1,8 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import { Link } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const menuHandle = () => {
@@ -18,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <Link to="/">
+        <Link smooth to="header">
           <div className="navbar-logo">
             <Logo title="Gastón Konstantinides - Full Stack Developer" />
             <span className="navbar-logodescription">
@@ -32,7 +31,7 @@ const Navbar = () => {
           </div>
           <div className="nav-links">
             <ul>
-              <LinkScroll
+              <Link
                 smooth={true}
                 spy={true}
                 activeClass="active"
@@ -41,8 +40,8 @@ const Navbar = () => {
                 onClick={menuHandle}
               >
                 <li>Home</li>
-              </LinkScroll>
-              <LinkScroll
+              </Link>
+              <Link
                 smooth={true}
                 spy={true}
                 activeClass="active"
@@ -51,8 +50,8 @@ const Navbar = () => {
                 onClick={menuHandle}
               >
                 <li>Portfolio</li>
-              </LinkScroll>
-              <LinkScroll
+              </Link>
+              <Link
                 smooth={true}
                 spy={true}
                 activeClass="active"
@@ -61,8 +60,8 @@ const Navbar = () => {
                 onClick={menuHandle}
               >
                 <li>Skills</li>
-              </LinkScroll>
-              <LinkScroll
+              </Link>
+              <Link
                 smooth={true}
                 spy={true}
                 activeClass="active"
@@ -71,8 +70,8 @@ const Navbar = () => {
                 onClick={menuHandle}
               >
                 <li>Acerca de</li>
-              </LinkScroll>
-              <LinkScroll
+              </Link>
+              <Link
                 smooth={true}
                 spy={true}
                 activeClass="active"
@@ -81,17 +80,15 @@ const Navbar = () => {
                 onClick={menuHandle}
               >
                 <li>Contacto</li>
-              </LinkScroll>
-              <LinkScroll
-                smooth={true}
-                spy={true}
-                activeClass="active"
-                offset={-100}
-                to="cv"
-                onClick={menuHandle}
+              </Link>
+
+              <a
+                href="https://drive.google.com/file/d/1LXMKHsL04jBbh_o5vcaB5YgJWEQuJEGh/preview"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <li>Ver CV</li>
-              </LinkScroll>
+              </a>
             </ul>
           </div>
         </nav>

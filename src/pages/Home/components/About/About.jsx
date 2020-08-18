@@ -30,7 +30,13 @@ const About = () => {
             especialidad en <span>Full Stack con Python</span>.
           </p>
           <div className="about-cta">
-            <a>Ver Curriculum Vitae {">"}</a>
+            <a
+              href="https://drive.google.com/file/d/1LXMKHsL04jBbh_o5vcaB5YgJWEQuJEGh/preview"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver Curriculum Vitae {">"}
+            </a>
           </div>
         </div>
       </div>

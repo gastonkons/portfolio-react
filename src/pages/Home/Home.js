@@ -20,22 +20,10 @@ const Home = () => {
             <h1>Full Stack Developer</h1>
             <h2>Desarrollador Web y Diseñador</h2>
             <p>Impulsado por la Tecnología y la Creatividad</p>
-            <Link
-              smooth={true}
-              spy={true}
-              activeClass="active"
-              offset={-100}
-              to="portfolio"
-            >
+            <Link smooth={true} offset={-100} to="portfolio">
               Ver Portfolio {">"}
             </Link>
-            <Link
-              smooth={true}
-              spy={true}
-              activeClass="active"
-              offset={-100}
-              to="about"
-            >
+            <Link smooth={true} offset={-100} to="about">
               Acerca de {">"}
             </Link>
           </div>
