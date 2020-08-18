@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as Logo } from "../../assets/images/Logo.svg";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
