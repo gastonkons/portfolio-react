@@ -125,6 +125,10 @@
   opacity: 0.9;
 }
 
+.nav-links ul a.active {
+  opacity: 0.5;
+}
+
 .nav-links ul a:hover {
   color: var(--nav-color-hover);
   opacity: 1;
