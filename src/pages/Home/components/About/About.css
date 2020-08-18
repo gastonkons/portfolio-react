@@ -96,6 +96,11 @@
   .about-content {
     grid-template-columns: 1fr;
   }
+
+  .about-cta a::after,
+  .about-cta a:hover::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
