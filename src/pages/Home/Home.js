@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as Logo } from "../assets/images/logo.svg";
 import Navbar from "../../common/Navbar/Navbar";
 import OpenToWork from "./components/OpenToWork/OpenToWork";
 import { Link } from "react-scroll";
