@@ -16,7 +16,17 @@ const Home = () => {
       <header className="pt-44 header" id="header">
         <OpenToWork />
         <div className="hero">
-          <div className="hero-content">
+          <div
+            className="hero-content"
+            data-aos="fade-in"
+            data-aos-offset="0"
+            data-aos-delay="0"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
             <h1>Full Stack Developer</h1>
             <h2>Desarrollador Web y Diseñador</h2>
             <p>Impulsado por la Tecnología y la Creatividad</p>
@@ -37,7 +47,7 @@ const Home = () => {
       <Contact />
       <footer>
         <p>
-          Make with <span>Passion</span> by <b>@gastonkons</b>.
+          Made with <span>Passion</span> by <b>@gastonkons</b>.
         </p>
         <div className="footer-logo">
           <Logo />

@@ -6,7 +6,7 @@ import IcomoonReact from "icomoon-react";
 const Contact = () => {
   return (
     <div className="contact" id="contact">
-      <div className="contact-container">
+      <div className="contact-container" data-aos="fade-up">
         <div className="contact-title">
           <p>- Puedes comunicarte por donde prefieras -</p>
           <a
@@ -17,7 +17,7 @@ const Contact = () => {
             <h2 className="headline">Contáctame!</h2>
           </a>
         </div>
-        <div className="contact-links">
+        <div className="contact-links" data-aos="fade-up">
           <a
             href="mailto:gastonkons@gmail.com?Subject=Hello%20world!"
             target="_blank"

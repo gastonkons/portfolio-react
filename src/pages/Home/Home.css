@@ -147,6 +147,11 @@ footer p span {
 
 @media screen and (max-width: 400px) {
   .hero {
-    margin-bottom: -0.3px;
+    margin-bottom: -0.8px;
+  }
+
+  footer {
+    width: 100%;
+    padding: 2rem 0px;
   }
 }

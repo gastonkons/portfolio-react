@@ -83,7 +83,7 @@ const Navbar = () => {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/1LXMKHsL04jBbh_o5vcaB5YgJWEQuJEGh/preview"
+                href="https://drive.google.com/file/d/12mZWPytgfv2TxesR6llHZ5gqUckeiH__/preview"
                 target="_blank"
                 rel="noopener noreferrer"
               >

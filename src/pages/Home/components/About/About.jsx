@@ -4,7 +4,7 @@ import Perfil from "../../../../assets/images/Perfil.jpg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" data-aos="fade-right">
       <div className="about-title">
         <p>- Me llamo Gastón, lo primero -</p>
         <h2 className="headline">Acerca de mí</h2>
@@ -13,7 +13,7 @@ const About = () => {
         <div className="about-image">
           <img src={Perfil} alt="Foto de Gastón Konstantinides" />
         </div>
-        <div className="about-text">
+        <div className="about-text" data-aos="fade-left">
           <p>
             Full Stack especializado en <span>Frontend Developer</span>.
           </p>
@@ -31,7 +31,7 @@ const About = () => {
           </p>
           <div className="about-cta">
             <a
-              href="https://drive.google.com/file/d/1LXMKHsL04jBbh_o5vcaB5YgJWEQuJEGh/preview"
+              href="https://drive.google.com/file/d/12mZWPytgfv2TxesR6llHZ5gqUckeiH__/preview"
               target="_blank"
               rel="noopener noreferrer"
             >

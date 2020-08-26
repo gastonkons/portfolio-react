@@ -4,11 +4,11 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <div className="skills">
-      <div className="skills-title">
+      <div className="skills-title" data-aos="fade-up">
         <p>- Habilidades Principales -</p>
         <h2 className="headline">Skills</h2>
       </div>
-      <div className="skills-tables">
+      <div className="skills-tables" data-aos="fade-up">
         <div className="skills-table">
           <div className="skills-table__type">
             <h3>Lenguajes</h3>

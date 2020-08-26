@@ -6,7 +6,7 @@ const Portfolio = () => {
   const { projects } = data;
   return (
     <div className="portfolio" id="portfolio">
-      <div className="portfolio-title">
+      <div className="portfolio-title" data-aos="fade-up">
         <p>- Diseño & Desarrollo -</p>
         <h2 className="headline">Portfolio</h2>
       </div>
@@ -22,7 +22,11 @@ const Portfolio = () => {
             image,
           } = project;
           return (
-            <div key={i} className="portfolio-card">
+            <div
+              key={i}
+              className="portfolio-card"
+              data-aos={i % 2 ? "fade-up-left" : "fade-up-right"}
+            >
               <div className="card-description">
                 <span className="card-typo">{typo}</span>
                 <h3 className="card-title subheadline">{name}</h3>
