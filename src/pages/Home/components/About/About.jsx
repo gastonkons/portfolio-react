@@ -7,7 +7,7 @@ const About = () => {
     <div className="about" data-aos="fade-right">
       <div className="about-title">
         <p>- Me llamo Gastón, lo primero -</p>
-        <h2 className="headline">Acerca de mí</h2>
+        <h2 className="headline">Sobre mí</h2>
       </div>
       <div className="about-content">
         <div className="about-image">
@@ -15,23 +15,23 @@ const About = () => {
         </div>
         <div className="about-text" data-aos="fade-left">
           <p>
-            Full Stack especializado en <span>Frontend Developer</span>.
+            <span>Frontend Developer</span> con background de Backend.
           </p>
           <p className="p-min">
             También trabajé como <span>Diseñador</span> y{" "}
             <span>Community Manager</span> de manera freelance.
           </p>
           <p className="p-min">
-            Tengo 27 años, vivo en <span>Córdoba</span>, Argentina. Me encantan
-            los <span>retos</span> y participar en comunidades.
+            Tengo 27 años, vivo en <span>Córdoba</span>, Argentina. Actualmente
+            curso el programa <span>Codo a Codo</span> con especialidad en{" "}
+            <span>Full Stack con Python</span>.
           </p>
           <p className="p-min">
-            Actualmente curso el programa <span>Codo a Codo</span> con
-            especialidad en <span>Full Stack con Python</span>.
+            Me encantan los <span>retos</span> y participar en comunidades!
           </p>
           <div className="about-cta">
             <a
-              href="https://drive.google.com/file/d/12mZWPytgfv2TxesR6llHZ5gqUckeiH__/preview"
+              href="https://docs.google.com/document/d/16RmVXIXVNJzsyIX8u22XUWzusmvXvliR8XS-HQBerR4/preview"
               target="_blank"
               rel="noopener noreferrer"
             >

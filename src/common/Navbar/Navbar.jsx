@@ -69,7 +69,7 @@ const Navbar = () => {
                 to="about"
                 onClick={menuHandle}
               >
-                <li>Acerca de</li>
+                <li>Sobre mi</li>
               </Link>
               <Link
                 smooth={true}
@@ -83,7 +83,7 @@ const Navbar = () => {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/12mZWPytgfv2TxesR6llHZ5gqUckeiH__/preview"
+                href="https://docs.google.com/document/d/16RmVXIXVNJzsyIX8u22XUWzusmvXvliR8XS-HQBerR4/preview"
                 target="_blank"
                 rel="noopener noreferrer"
               >

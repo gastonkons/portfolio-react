@@ -27,8 +27,20 @@
   width: 100%;
 }
 
+.skills-table__type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .skills-table__type h3 {
   font-size: var(--description-size);
+  font-weight: 500;
+  color: var(--dark-blue-color);
+}
+
+.skills-table__type h4 {
+  font-size: calc(var(--description-size) - 0.1rem);
   font-weight: 500;
   color: var(--dark-blue-color);
 }
@@ -45,6 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .skills-table__table li::after {
@@ -52,51 +65,18 @@
   height: 4px;
   position: absolute;
   width: 100%;
-  background: var(--gray-color);
-  bottom: -15px;
-  left: 0;
-}
-
-.skills-table__table li::before {
-  content: "";
-  height: 4px;
-  position: absolute;
   background: var(--dark-blue-color);
   bottom: -15px;
   left: 0;
-  z-index: 2;
 }
 
-li.skill-javascript::before {
-  width: 70%;
+.skills-table__table .ability {
+  color: var(--medium-gray-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-li.skill-git::before {
-  width: 60%;
-}
-li.skill-css::before {
-  width: 80%;
-}
-li.skill-node::before {
-  width: 30%;
-}
-li.skill-python::before {
-  width: 10%;
-}
-li.skill-html::before {
-  width: 80%;
-}
-li.skill-react::before {
-  width: 40%;
-}
-li.skill-express::before {
-  width: 20%;
-}
-li.skill-django::before {
-  width: 5%;
-}
-li.skill-postgresql::before {
-  width: 40%;
-}
-li.skill-mongo::before {
-  width: 1%;
+
+.skills-table__table li:hover .ability {
+  color: #fff;
 }

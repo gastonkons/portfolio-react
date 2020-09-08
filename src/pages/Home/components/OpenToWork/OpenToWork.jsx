@@ -12,8 +12,8 @@ const OpenToWork = () => {
         aria-label="Linkedin de Gastón Konstantinides"
       >
         <span>
-          <strong>#OpenToWork</strong> - En busqueda de desafíos y nuevas
-          experiencias.
+          <strong>#HowCanHelpYou?</strong> - Puedes contactarme por LinkedIn
+          haciendo click aquí o por correo a gastonkons@gmail.com!
         </span>
       </a>
     </div>

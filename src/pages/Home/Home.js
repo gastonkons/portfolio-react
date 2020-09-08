@@ -27,14 +27,14 @@ const Home = () => {
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <h1>Full Stack Developer</h1>
+            <h1>Frontend Developer</h1>
             <h2>Desarrollador Web y Diseñador</h2>
             <p>Impulsado por la Tecnología y la Creatividad</p>
             <Link smooth={true} offset={-100} to="portfolio">
               Ver Portfolio {">"}
             </Link>
             <Link smooth={true} offset={-100} to="about">
-              Acerca de {">"}
+              Sobre mi {">"}
             </Link>
           </div>
         </div>

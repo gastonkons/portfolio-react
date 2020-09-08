@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "NotesApp",
+      "typo": "Desarrollo FullStack",
+      "description": "Típico CRUD de notas, se pueden crear usuarios, notas, editarlas o eliminarlas! Creado con el Stack MERN",
+      "techs": ["MongoDB", "Express", "React", "Node", "Git"],
+      "demo": "https://notesapp-seven.vercel.app/",
+      "source": "https://github.com/gastonkons/notesapp",
+      "image": "https://i.imgur.com/n2jMTP1.jpg"
+    },
+    {
       "name": "Face Recognition",
       "typo": "Desarrollo Full Stack",
       "description": "Detección de caras a traves de link de imagenes con login y registro de puntos.",
