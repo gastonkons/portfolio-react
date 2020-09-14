@@ -19,6 +19,15 @@
       "image": "https://i.imgur.com/sQEXGK3.jpg"
     },
     {
+      "name": "Blackjack Friendly",
+      "typo": "Desarrollo Frontend",
+      "description": "El juego de Blackjack construido en JavaScript, HTML5, CSS3 y la biblioteca de underscore-js para mezclar el mazo. ¡Pruébalo!",
+      "techs": ["JavaScript", "HTML", "CSS", "Git", "Underscore-js"],
+      "demo": "https://gastonkons.github.io/blackjack-js/",
+      "source": "https://github.com/gastonkons/blackjack-js/",
+      "image": "https://i.imgur.com/z6R9Y4p.png"
+    },
+    {
       "name": "Apple Calculator",
       "typo": "Desarrollo Frontend",
       "description": "Imitación de la calculadora de Apple en el navegador con JavaScript.",
