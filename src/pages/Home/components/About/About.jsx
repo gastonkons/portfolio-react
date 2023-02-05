@@ -31,7 +31,7 @@ const About = () => {
           </p>
           <div className="about-cta">
             <a
-              href="https://drive.google.com/file/d/11y4SN0P9lUkWtGAYrDuZKP8R5mn0597V/view"
+              href="https://drive.google.com/file/d/1U4S1wi01zhqK9mmXMHJICJb6sCn4oDuy/view"
               target="_blank"
               rel="noopener noreferrer"
             >
