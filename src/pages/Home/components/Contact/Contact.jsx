@@ -31,7 +31,7 @@ const Contact = () => {
             />
           </a>
           <a
-            href="https://twitter.com/gastonkonstant"
+            href="https://twitter.com/gastonkons"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -43,7 +43,7 @@ const Contact = () => {
             />
           </a>
           <a
-            href="https://github.com/gastonkons"
+            href="https://github.com/gaskons"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -55,7 +55,7 @@ const Contact = () => {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/gastonkons/"
+            href="https://www.linkedin.com/in/gastonkons"
             target="_blank"
             rel="noopener noreferrer"
           >
